@@ -1,0 +1,61 @@
+
+body { font-family: "Open Sans";
+       font-size: 14px;
+       font-style: normal;
+       font-variant: normal;
+       font-weight: 400;
+       line-height: 20px;
+
+       background-image: url("../multimedia/backgroundImage.jpg");
+}
+.container {
+    display: grid;
+    grid-template-columns: [space1] 3% [user] 30% [space2] 5% [rest] auto [space3] 15%;
+    grid-template-rows: [marginTop] 5% [content] auto [rowButton] 10%;
+}
+
+.user {
+    grid-column-start: user;
+    grid-row-start: content;
+
+    align-self: center;
+    justify-self: center;
+
+}
+
+.rest {
+    grid-column-start: rest;
+    grid-row-start: content;
+
+}
+
+.searchBtnContainer {
+    grid-column-start: rest;
+    grid-row-start: rowButton;
+    justify-self: end;}
+
+#tableEx td:hover {
+    cursor: pointer;
+    background-color: #007AA4;
+}
+
+#tableEx tr:hover{
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+
+table thead tr th{
+    border-bottom: 1px solid #000000;
+}
+
+#searchBtn:hover {
+    background-color: #007AA4;
+}
+
+input[type=submit] {
+    background-color: #004870;
+    color: white;
+    padding: 14px 16px;
+    border: none;
+    cursor: pointer;
+}

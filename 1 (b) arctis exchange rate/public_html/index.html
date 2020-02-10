@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Exchange rate</title>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+
+        <meta name="title" content="Exchange rate">
+        <meta name="author" content="Ivan Slavko Matić">
+        <meta name="keywords" 
+              content="rate, exchange, 
+              exchange rate, currency">
+
+        <script src="javascript/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="javascript/exchange_rate.js"></script>
+        <link href="css/exchange_rate.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="user">
+                <div>
+                    <a title="Profile Picture">
+                        <img src="multimedia/profile_picture.png" 
+                             width="320" height="240" alt="Profile Picture" />
+                    </a>
+                </div>
+                <div>
+                    <label for="dateInsert">Insert date :</label>
+                    <input id="dateInsert" type="text" placeholder="YYYY-MM-DD" name="dateInsert">
+                </div>
+                <div>
+                    <p id="username">Username: userTest1</p>
+                    <p id="nameSurname">Name & Surname: User Test1</p>
+                    <p id="userType">User right: Type 1</p>
+                    <p id="currentDate">Current date: </p>
+                    <p id="lastLogin">Last login: 2019-01-01</p>
+                </div>
+
+            </div>
+            <div class="rest">
+                <div>
+                    <table bgcolor="#24518F" id="tableEx" style="width: 100%">
+                        <thead>
+                        <th>Unit value</th>
+                        <th>Currency code</th>
+                        <th>Median rate</th>
+                        <th>Buying rate</th>
+                        <th>Selling rate</th>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+            <div class="searchBtnContainer" >
+                <input name="searchBtn" type="submit" value="Search" id="searchBtn">
+            </div>
+        </div>
+
+    </body>
+</html>
